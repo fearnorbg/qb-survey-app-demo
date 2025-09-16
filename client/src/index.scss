@@ -1,0 +1,115 @@
+/* @import "tailwindcss"; */
+
+* {
+  font-family: Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.5rem
+}
+
+.justify-content-flex-end {
+  justify-content: flex-end;
+}
+
+.flex-no-gap {
+  gap: 0;
+}
+
+.flex-1-1-100 {
+  flex: 1 1 100%
+}
+
+.width-160 {
+  flex: 0 0 160px;
+  width: 160px;
+}
+
+.flex-column-fit-content {
+  width: fit-content;
+}
+
+.flex-column-children-fit-width {
+   & > * {
+     width: 100%;
+   }
+}
+
+.button {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+
+    &.button-large {
+      padding: 0.5rem;
+      font-size: x-large;
+    }
+}
+
+.button.button-primary {
+  border-color: green;
+  background-color: forestgreen;
+  color: white;
+
+  &:hover {
+    background-color: limegreen;
+  }
+
+  &:active {
+    background-color: darkgreen;
+  }
+}
+
+.button.button-secondary {
+  border-color: blue;
+  background-color: deepskyblue;
+  color: white;
+
+  &:hover {
+    background-color: lightskyblue;
+  }
+
+  &:active {
+    background-color: dodgerblue;
+  }
+}
+
+.button.button-danger {
+  border-color: darkred;
+  background-color: red;
+  color: white;
+
+  &:hover {
+    background-color: indianred;
+  }
+
+  &:active {
+    background-color: darkred;
+  }
+}
